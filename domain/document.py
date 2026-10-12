@@ -80,11 +80,16 @@ class documentfactory:
         else:
             raise ValueError("Invalid document type")
 
-        
-doc1 = documentfactory.create_document("PDF", "sample.pdf", "2MB", "2023-01-01", "PDF", 10)
-doc2 = documentfactory.create_document("Word", "sample.docx", "1MB", "2023-01-01", "Word", 100)
-doc3 = documentfactory.create_document("Excel", "sample.xlsx", "1.5MB", "2023-01-01", "Excel", 5)
 
-print(doc1)
-print(doc2)
-print(doc3)
+def demo_documents():
+    doc1 = documentfactory.create_document("PDF", "sample.pdf", "2MB", "2023-01-01", "PDF", 10)
+    doc2 = documentfactory.create_document("Word", "sample.docx", "1MB", "2023-01-01", "Word", 100)
+    doc3 = documentfactory.create_document("Excel", "sample.xlsx", "1.5MB", "2023-01-01", "Excel", 5)
+
+    print(doc1)
+    print(doc2)
+    print(doc3)
+
+
+if __name__ == "__main__":
+    demo_documents()

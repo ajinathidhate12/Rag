@@ -23,18 +23,19 @@ def print_matrix(matrix, name=""):
     for row in matrix:
         print(f"  {row}")
     print()
-A = [
-    [1, 2],
-    [3, 4]
-]
+if __name__ == "__main__":
+    A = [
+        [1, 2],
+        [3, 4]
+    ]
 
-B = [
-    [5, 6],
-    [7, 8]
-]
+    B = [
+        [5, 6],
+        [7, 8]
+    ]
 
-result = matrixcal(A, B)
+    result = matrixcal(A, B)
 
-print_matrix(A, "A")
-print_matrix(B, "B")
-print_matrix(result, "A × B")
+    print_matrix(A, "A")
+    print_matrix(B, "B")
+    print_matrix(result, "A × B")
